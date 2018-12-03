@@ -6,7 +6,7 @@ This DSM/Rsyslog config will support sending the following dnsmasq event types "
 # Pi-Hole Changes
 1. Run the command "sed -i 's/log-facility=\/var\/log\/pihole.log/log-facility=DAEMON/g' /etc/dnsmasq.d/01-pihole.conf"
 2. Copy the file "10-dnsmasq-pihole.conf" to the location "/etc/rsyslog.d"
-3. Edit the line "@QRadar or @@QRadar" with the IP address of your QRCE instance. Depending on if you will utilize UDP (@) or TCP (@@). 
+3. Uncomment and edit the line "@QRadar or @@QRadar" with the IP address of your QRCE instance. Depending on if you will utilize UDP (@) or TCP (@@). 
 4. Create the logging file by running the command "touch /var/log/pihole/dnsmasq.pihole.query.log"
 5. Set the permissions to write to the log file "chmod 666 /var/log/pihole/dnsmasq.pihole.query.log"
 6. Restart the services dnsmasq and rsyslog "systemctl restart pihole-FTL && systemctl restart rsyslog"
