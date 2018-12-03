@@ -1,0 +1,47 @@
+Event ID: config
+Category: dnsmasq
+Name: DNS Lookup Failed
+High Level Category: Application
+Low Level Category: DNS Denied
+Severity: 5
+Description: The DNS lookup failed to resolve resolve a domain name to an IP address.
+
+Event ID: cached
+Category: dnsmasq
+Name: DNS Cached Reply
+High Level Category: Application
+Low Level Category: DNS In Progress
+Severity: 1
+Description: The local DNS server is responding to a client with the results from the cached DNS query.
+
+Event ID: reply
+Category: dnsmasq
+Name: DNS Reply
+High Level Category: Application
+Low Level Category: DNS In Progress
+Severity: 1
+Description: A DNS server is responding to a client with the results from the DNS query.
+
+Event ID: query
+Category: dnsmasq
+Name: DNS Query
+High Level Category: Application
+Low Level Category: DNS Opened
+Severity: 1
+Description: A client is querying the DNS server to resolve a domain name to IP address.
+
+Event ID: forwarded
+Category: dnsmasq
+Name: DNS Forward
+High Level Category: Application
+Low Level Category: DNS In Progress
+Severity: 1
+Description: DNS request has been forwarded to designated DNS server for resolution.
+
+Event ID: /etc/pihole/gravity.list
+Category: dnsmasq
+Name: DNS Query Blocked by Pi-Hole
+High Level Category: Application
+Low Level Category: DNS Denied
+Severity: 5
+Description: DNS request is on the Pi-Hole blacklist (gravity.list).
