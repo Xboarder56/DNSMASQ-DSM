@@ -36,5 +36,5 @@ Capture Group: 1
 
 URL:
 Expression Type: Regex
-Expression: \w+\s+\d+\s+[\d:]+\s(\S+)\sdnsmasq\[
-Capture Group: 1
+Expression: (.list|\])\s(\S+)\s
+Capture Group: 2
