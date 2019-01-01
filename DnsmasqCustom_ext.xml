@@ -1,7 +1,7 @@
 <ns2:device-extension xmlns:ns2="event_parsing/device_extension">
  <pattern type="JavaPattern" id="DestinationIp-Pattern-1">[is|to]\s(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})</pattern>
  <pattern type="JavaPattern" id="EventCategory-Pattern-1">(dnsmasq)\[\d+\]\:</pattern>
- <pattern type="JavaPattern" id="EventName-Pattern-1">dnsmasq\[\d+\]\:\s\d+\s\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\/\d+\s(\w+|\S+)</pattern>
+ <pattern type="JavaPattern" id="EventName-Pattern-1">dnsmasq\[\d+\]\:\s(?:\d+\s\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\/\d+\s|)(\w+|\S+)</pattern>
  <pattern type="JavaPattern" id="HostName-Pattern-1">\w+\s+\d+\s+[\d:]+\s(\S+)\sdnsmasq\[</pattern>
  <pattern type="JavaPattern" id="DeviceTime-Pattern-1">(\w+)\s+(\d+)\s+([\d:]+)\s</pattern>
  <pattern type="JavaPattern" id="SourceIp-Pattern-1">\]\:\s\d+\s(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\/</pattern>
