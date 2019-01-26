@@ -21,7 +21,7 @@ Format String: $1
 Log Source Time:
 Expression Type: Regex
 Expression: (\w+)\s+(\d+)\s+([\d:]+)\s
-Format String: 2018-$1-$2 $3
+Format String: 2019-$1-$2 $3
 Date Format: yyyy-MMM-dd hh:mm:ss
 
 Source IP:

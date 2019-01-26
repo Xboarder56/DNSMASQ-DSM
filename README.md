@@ -23,7 +23,8 @@ This DSM/Rsyslog config will support sending the following dnsmasq event types "
 9. Finally, you will need to create a new log source selecting the custom Log source type we just created.
 
 # Change Log
-- 12-31-2018 - Fixed event ID parsing as it seems that when the dnsmasq server was updated to the latest build the logging format changed. 
+- 01-26-2018 - Fixed log source time to reflect 2019.
+- 12-31-2018 - Fixed event ID parsing as it seems that when the dnsmasq server was updated to the latest build the logging format changed.
 
 # References/Sources
 - https://discourse.pi-hole.net/t/request-option-to-send-logs-to-a-remote-logserver/1381/8 (User: Fedora-Core)
