@@ -12,7 +12,7 @@
    <matcher order="1" enable-substitutions="true" capture-group="\1" pattern-id="EventCategory-Pattern-1" field="EventCategory" />
    <matcher order="1" enable-substitutions="true" capture-group="\1" pattern-id="EventName-Pattern-1" field="EventName" />
    <matcher order="1" enable-substitutions="true" capture-group="\1" pattern-id="HostName-Pattern-1" field="HostName" />
-   <matcher ext-data="yyyy-MMM-dd hh:mm:ss" order="1" enable-substitutions="true" capture-group="2018-\1-\2 \3" pattern-id="DeviceTime-Pattern-1" field="DeviceTime" />
+   <matcher ext-data="yyyy-MMM-dd hh:mm:ss" order="1" enable-substitutions="true" capture-group="2019-\1-\2 \3" pattern-id="DeviceTime-Pattern-1" field="DeviceTime" />
    <matcher order="1" enable-substitutions="true" capture-group="\1" pattern-id="SourceIp-Pattern-1" field="SourceIp" />
    <matcher order="1" capture-group="1" pattern-id="SourcePort-Pattern-1" field="SourcePort" />
    <event-match-multiple force-qidmap-lookup-on-fixup="true" send-identity="UseDSMResults" pattern-id="AllEvents" />
