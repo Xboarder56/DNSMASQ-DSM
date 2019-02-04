@@ -11,6 +11,11 @@ This DSM/Rsyslog config will support sending the following dnsmasq event types "
 5. Set the permissions to write to the log file "chmod 666 /var/log/pihole/dnsmasq.pihole.query.log"
 6. Restart the services dnsmasq and rsyslog "systemctl restart pihole-FTL && systemctl restart rsyslog"
 
+# Pi-Hole Upgrades
+1. pihole -up
+2. Run the command "sed -i 's@log-facility=\/var\/log\/pihole.log@log-facility=DAEMON@g' /etc/dnsmasq.d/01-pihole.conf"
+3. Restart the services dnsmasq and rsyslog "systemctl restart pihole-FTL && systemctl restart rsyslog"
+
 # QRCE Changes
 1. Create a new custom DSM called (dnsmasq or Pi-Hole) using the DSM editor option under the admin settings window.
 2. Once the custom DSM has been created close the window and click the Log Source Extensions option in the admin settings.
@@ -23,7 +28,8 @@ This DSM/Rsyslog config will support sending the following dnsmasq event types "
 9. Finally, you will need to create a new log source selecting the custom Log source type we just created.
 
 # Change Log
-- 01-26-2018 - Fixed log source time to reflect 2019.
+- 02-03-2019 - Fixed issue with the rsyslog config not writing to the correct log file.
+- 01-26-2019 - Fixed log source time to reflect 2019.
 - 12-31-2018 - Fixed event ID parsing as it seems that when the dnsmasq server was updated to the latest build the logging format changed.
 
 # References/Sources
