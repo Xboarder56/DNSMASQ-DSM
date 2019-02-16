@@ -28,6 +28,7 @@ This DSM/Rsyslog config will support sending the following dnsmasq event types "
 9. Finally, you will need to create a new log source selecting the custom Log source type we just created.
 
 # Change Log
+- 02-16-2019 - Adjusted eventID parsing to support Pi-Hole (repeat message X times).
 - 02-03-2019 - Fixed issue with the rsyslog config not writing to the correct log file.
 - 01-26-2019 - Fixed log source time to reflect 2019.
 - 12-31-2018 - Fixed event ID parsing as it seems that when the dnsmasq server was updated to the latest build the logging format changed.

@@ -45,3 +45,11 @@ High Level Category: Application
 Low Level Category: DNS Denied
 Severity: 5
 Description: DNS request is on the Pi-Hole blacklist (gravity.list).
+
+Event ID: message repeated
+Category: dnsmasq
+Name: DNS Query Repeated
+High Level Category: Application
+Low Level Category: DNS In Progress
+Severity: 3
+Description: DNS request was repeated multiple times.
